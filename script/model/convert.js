@@ -1,3 +1,4 @@
+import { roundNum } from "../util/util.js";
 function Convert(tempInput, fromInput, toInput) {
   this.temperature = tempInput;
   this.from = fromInput;
@@ -6,13 +7,15 @@ function Convert(tempInput, fromInput, toInput) {
 }
 
 Convert.prototype.celcToKel = function (input) {
-  return input + 273.15;
+  return roundNum(input + 273.15);
 };
 
 Convert.prototype.celcToFah = function (input) {
-  let result = input * (9 / 5) + 32;
-  let roundedResult = parseFloat(result.toFixed(2));
-  return roundedResult;
+  return roundNum(input * (9 / 5) + 32);
+};
+
+Convert.prototype.kelToCel = function (input) {
+  return roundNum(input - 273.15);
 };
 
 export { Convert };
