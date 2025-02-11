@@ -22,4 +22,12 @@ Convert.prototype.kelToFah = function () {
   return (this.result = roundNum((this.temperature - 273.15) * (9 / 5) + 32));
 };
 
+Convert.prototype.fahToCel = function () {
+  return (this.result = roundNum((this.temperature - 32) * (5 / 9)));
+};
+
+Convert.prototype.fahToKel = function () {
+  return (this.result = roundNum((this.temperature - 32) * (5 / 9) + 273.15));
+};
+
 export { Convert };
