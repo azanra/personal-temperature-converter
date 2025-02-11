@@ -3,4 +3,10 @@ function roundNum(input) {
   return roundedInput;
 }
 
-export { roundNum };
+function setMultipleAttribute(element, attribute) {
+  for (let key in attribute) {
+    element.setAttribute(key, attribute[key]);
+  }
+}
+
+export { roundNum, setMultipleAttribute };
