@@ -1,5 +1,7 @@
 import { Convert } from "./model/convert.js";
+import { Form } from "./view/form.js";
 
-let convert = new Convert(21, "celcius", "kelvin");
-convert.fahToKel();
-console.log(convert);
+let firstConvert = new Convert(21, "celcius", "kelvin");
+firstConvert.fahToKel();
+console.log(firstConvert);
+let formElement = new Form();
