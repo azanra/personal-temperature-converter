@@ -11,10 +11,15 @@ function setMultipleAttribute(element, attribute) {
   }
 }
 
-function createMultipleElement(amount, parent, element, attribute, text) {
-  for (let i = 0; i < amount; i++) {
-    createElement(parent, element, attribute, text);
+function createMultipleElement(array) {
+  for (let i = 0; i < array.length; i++) {
+    createElement(
+      array[i].parent,
+      array[i].element,
+      array[i].attribute,
+      array[i].text
+    );
   }
 }
 
-export { roundNum, setMultipleAttribute };
+export { roundNum, setMultipleAttribute, createMultipleElement };
