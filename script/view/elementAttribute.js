@@ -46,12 +46,52 @@ const elementAttr = {
       text: "celcius",
     },
   },
+  toSelect: {
+    parent: ".convert-container",
+    element: "select",
+    attribute: {
+      id: "to-select",
+    },
+  },
+  toOption: {
+    kelvin: {
+      parent: "#to-select",
+      element: "option",
+      attribute: {
+        value: "kelvin",
+      },
+      text: "kelvin",
+    },
+    fahrenheit: {
+      parent: "#to-select",
+      element: "option",
+      attribute: {
+        value: "fahrenheit",
+      },
+      text: "fahrenheit",
+    },
+    celcius: {
+      parent: "#to-select",
+      element: "option",
+      attribute: {
+        value: "celcius",
+      },
+      text: "celcius",
+    },
+  },
 };
 
-const selectOption = [];
-for (let key in elementAttr.fromOption) {
-  selectOption.push(elementAttr.fromOption[key]);
-}
-console.log(selectOption);
+const selectFromOption = [];
+const selectToOption = [];
 
-export { elementAttr, selectOption };
+for (let key in elementAttr.fromOption) {
+  selectFromOption.push(elementAttr.fromOption[key]);
+}
+
+for (let key in elementAttr.toOption) {
+  selectToOption.push(elementAttr.toOption[key]);
+}
+
+console.log(selectFromOption, selectToOption);
+
+export { elementAttr, selectFromOption, selectToOption };

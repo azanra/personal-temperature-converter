@@ -1,4 +1,8 @@
-import { elementAttr, selectOption } from "./elementAttribute.js";
+import {
+  elementAttr,
+  selectFromOption,
+  selectToOption,
+} from "./elementAttribute.js";
 import { createElement } from "./createElement.js";
 import { createMultipleElement } from "../util/util.js";
 
@@ -18,7 +22,13 @@ function Form() {
     elementAttr.fromSelect.element,
     elementAttr.fromSelect.attribute
   );
-  createMultipleElement(selectOption);
+  createMultipleElement(selectFromOption);
+  createElement(
+    elementAttr.toSelect.parent,
+    elementAttr.toSelect.element,
+    elementAttr.toSelect.attribute
+  );
+  createMultipleElement(selectToOption);
 }
 
 export { Form };
