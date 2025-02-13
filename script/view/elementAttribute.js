@@ -87,6 +87,38 @@ const elementAttr = {
       text: "celcius",
     },
   },
+  inputContainer: {
+    parent: ".form-container",
+    element: "div",
+    attribute: {
+      class: "input-container",
+    },
+  },
+  inputSection: {
+    parent: ".input-container",
+    element: "div",
+    attribute: {
+      class: "input-section",
+    },
+  },
+  inputTemp: {
+    parent: ".input-section",
+    element: "input",
+    attribute: {
+      type: "number",
+      id: "input-temp",
+      name: "input-temp",
+      placeholder: "input your temperature here",
+    },
+  },
+  inputLabel: {
+    parent: ".input-section",
+    element: "p",
+    attribute: {
+      class: "input-label",
+    },
+    text: "input",
+  },
 };
 
 const selectFromOption = [];
