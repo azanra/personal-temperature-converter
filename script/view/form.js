@@ -24,6 +24,12 @@ function Form() {
   );
   createMultipleElement(selectFromOption);
   createElement(
+    elementAttr.toText.parent,
+    elementAttr.toText.element,
+    elementAttr.toText.attribute,
+    elementAttr.toText.text
+  );
+  createElement(
     elementAttr.toSelect.parent,
     elementAttr.toSelect.element,
     elementAttr.toSelect.attribute

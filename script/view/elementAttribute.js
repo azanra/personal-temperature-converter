@@ -46,6 +46,14 @@ const elementAttr = {
       text: "celcius",
     },
   },
+  toText: {
+    parent: ".convert-container",
+    element: "label",
+    attribute: {
+      class: "to-label",
+    },
+    text: "To",
+  },
   toSelect: {
     parent: ".convert-container",
     element: "select",
