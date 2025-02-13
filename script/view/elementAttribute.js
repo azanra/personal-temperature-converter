@@ -119,6 +119,31 @@ const elementAttr = {
     },
     text: "input",
   },
+  outputContainer: {
+    parent: ".input-container",
+    element: "div",
+    attribute: {
+      class: "output-section",
+    },
+  },
+  outputTemp: {
+    parent: ".output-section",
+    element: "input",
+    attribute: {
+      type: "number",
+      id: "output-temp",
+      name: "output-temp",
+      readonly: "",
+    },
+  },
+  outputLabel: {
+    parent: ".output-section",
+    element: "p",
+    attribute: {
+      class: "output-label",
+    },
+    text: "output",
+  },
 };
 
 const selectFromOption = [];
