@@ -144,6 +144,20 @@ const elementAttr = {
     },
     text: "output",
   },
+  historyContainer: {
+    parent: ".container",
+    element: "div",
+    attribute: {
+      class: "history-container",
+    },
+  },
+  historyText: {
+    parent: ".history-container",
+    element: "p",
+    attribute: {
+      class: "history-text",
+    },
+  },
 };
 
 const selectFromOption = [];
