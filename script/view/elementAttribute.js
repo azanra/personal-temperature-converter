@@ -158,6 +158,20 @@ const elementAttr = {
       class: "history-text",
     },
   },
+  formulaContainer: {
+    parent: ".container",
+    element: "div",
+    attribute: {
+      class: "formula-container",
+    },
+  },
+  formulaText: {
+    parent: ".formula-container",
+    element: "p",
+    attribute: {
+      class: "formula-text",
+    },
+  },
 };
 
 const selectFromOption = [];
