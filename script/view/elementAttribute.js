@@ -172,6 +172,14 @@ const elementAttr = {
       class: "formula-text",
     },
   },
+  convertBtn: {
+    parent: ".input-container",
+    element: "button",
+    attribute: {
+      class: "convert-btn",
+    },
+    text: "Convert",
+  },
 };
 
 const selectFromOption = [];
