@@ -11,6 +11,4 @@ let history = new History();
 let formula = new Formula();
 let formulaText = new FormulaText();
 
-let historyArr = [];
-
-historyArr = ConvertController(historyArr);
+ConvertController();

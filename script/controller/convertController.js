@@ -2,7 +2,7 @@ import { Convert } from "../model/convert.js";
 import { HistoryText } from "../view/history/history.js";
 import { updateText } from "../util/util.js";
 
-function ConvertController(arr) {
+function ConvertController() {
   const convertBtn = document.querySelector(".convert-btn");
   convertBtn.addEventListener("click", () => {
     let fromSelect = document.querySelector("#from-select").value;
@@ -14,7 +14,6 @@ function ConvertController(arr) {
     updateResultText(convertEntry.result);
     HistoryText(convertEntry);
     updateText(".formula-text", convertEntry.formula);
-    return arr.push(convertEntry);
   });
 }
 
