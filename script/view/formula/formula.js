@@ -3,7 +3,7 @@ import { elementAttr } from "../elementAttribute.js";
 
 function Formula() {
   createElement(
-    elementAttr.formContainer.parent,
+    elementAttr.formulaContainer.parent,
     elementAttr.formulaContainer.element,
     elementAttr.formulaContainer.attribute
   );
