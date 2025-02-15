@@ -177,6 +177,7 @@ const elementAttr = {
     element: "button",
     attribute: {
       class: "convert-btn",
+      type: "button",
     },
     text: "Convert",
   },

@@ -9,6 +9,7 @@ function ConvertController(arr) {
     tempInput = Number(tempInput);
     let convertEntry = new Convert(tempInput, fromSelect, toSelect);
     convertEntry = convertTemp(convertEntry);
+    updateText(convertEntry.result);
     return arr.push(convertEntry);
   });
 }
@@ -33,6 +34,11 @@ function convertTemp(convertObj) {
     convertObj.result = convertObj.fahToKel();
     return convertObj;
   }
+}
+
+function updateText(resultValue) {
+  const outputElement = document.querySelector("#output-temp");
+  outputElement.value = resultValue;
 }
 
 export { ConvertController };
