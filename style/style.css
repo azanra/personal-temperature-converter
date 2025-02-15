@@ -26,3 +26,11 @@
   align-items: center;
   gap: 3rem;
 }
+
+input,
+select,
+button {
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 5px;
+}
