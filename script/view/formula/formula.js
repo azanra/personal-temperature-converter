@@ -9,12 +9,11 @@ function Formula() {
   );
 }
 
-function FormulaText(formula) {
+function FormulaText() {
   createElement(
     elementAttr.formulaText.parent,
     elementAttr.formulaText.element,
-    elementAttr.formulaText.attribute,
-    formula
+    elementAttr.formulaText.attribute
   );
 }
 

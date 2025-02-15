@@ -22,4 +22,9 @@ function createMultipleElement(array) {
   }
 }
 
-export { roundNum, setMultipleAttribute, createMultipleElement };
+function updateText(element, text) {
+  const editElement = document.querySelector(element);
+  editElement.textContent = text;
+}
+
+export { roundNum, setMultipleAttribute, createMultipleElement, updateText };

@@ -1,5 +1,6 @@
 import { Convert } from "../model/convert.js";
 import { HistoryText } from "../view/history/history.js";
+import { updateText } from "../util/util.js";
 
 function ConvertController(arr) {
   const convertBtn = document.querySelector(".convert-btn");
@@ -10,8 +11,9 @@ function ConvertController(arr) {
     tempInput = Number(tempInput);
     let convertEntry = new Convert(tempInput, fromSelect, toSelect);
     convertEntry = convertTemp(convertEntry);
-    updateText(convertEntry.result);
+    updateResultText(convertEntry.result);
     HistoryText(convertEntry);
+    updateText(".formula-text", convertEntry.formula);
     return arr.push(convertEntry);
   });
 }
@@ -38,7 +40,7 @@ function convertTemp(convertObj) {
   }
 }
 
-function updateText(resultValue) {
+function updateResultText(resultValue) {
   const outputElement = document.querySelector("#output-temp");
   outputElement.value = resultValue;
 }

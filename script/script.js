@@ -9,7 +9,7 @@ let formElement = new Form();
 let convertBtn = new ConvertBtn();
 let history = new History();
 let formula = new Formula();
-let formulaText = new FormulaText("temperature + 273.15");
+let formulaText = new FormulaText();
 
 let historyArr = [];
 
