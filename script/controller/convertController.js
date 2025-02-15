@@ -1,4 +1,5 @@
 import { Convert } from "../model/convert.js";
+import { HistoryText } from "../view/history/history.js";
 
 function ConvertController(arr) {
   const convertBtn = document.querySelector(".convert-btn");
@@ -10,6 +11,7 @@ function ConvertController(arr) {
     let convertEntry = new Convert(tempInput, fromSelect, toSelect);
     convertEntry = convertTemp(convertEntry);
     updateText(convertEntry.result);
+    HistoryText(convertEntry);
     return arr.push(convertEntry);
   });
 }
