@@ -24,4 +24,4 @@ practice.
 
 # Screenshot
 
-! [alt-text](./image/ptc-ui.png)
+![alt-text](./image/ptc-ui.png)
