@@ -72,4 +72,13 @@ select {
   border: none;
   font-weight: bold;
   padding: 1.25rem;
+  color: var(--text-color);
+}
+
+.convert-btn:hover {
+  padding: 1.3rem;
+}
+
+.convert-btn:active {
+  padding: 1.4rem;
 }
