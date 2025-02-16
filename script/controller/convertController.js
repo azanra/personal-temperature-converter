@@ -36,6 +36,9 @@ function convertTemp(convertObj) {
   } else if (convertObj.from === "fahrenheit" && convertObj.to === "kelvin") {
     convertObj.result = convertObj.fahToKel();
     return convertObj;
+  } else {
+    const formulaText = document.querySelector(".formula-text");
+    formulaText.textContent = "Select proper temperature to convert from!";
   }
 }
 
