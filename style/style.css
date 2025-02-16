@@ -1,11 +1,15 @@
 :root {
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --bg-color: black;
+  --text-color: white;
 }
 
 body {
   font-family: var(--system-ui);
   box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -29,7 +33,8 @@ body {
 }
 
 .input-container,
-.convert-container {
+.convert-container,
+.convert-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,4 +47,23 @@ button {
   width: 10rem;
   height: 1.5rem;
   border-radius: 5px;
+}
+
+input {
+  padding: 0.3rem;
+}
+
+select {
+  height: 2rem;
+}
+
+option {
+  background-color: none;
+}
+
+.convert-btn {
+  background-color: rgb(146, 146, 230);
+  border: none;
+  font-weight: bold;
+  padding: 1.25rem;
 }
